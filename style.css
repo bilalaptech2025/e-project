@@ -103,11 +103,10 @@ h1, .navbar-brand, .nav-link {
 }
 
 #location {
-<<<<<<< HEAD
+
     background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('images/L1.jpg');
-=======
-    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/images/L1.jpg');
->>>>>>> 799a070a9d526f45d3d72128f0a4efc9fde4b3db
+
+  
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
