@@ -1,569 +1,1600 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Card_Special | Premium Greeting Cards</title>
+  <title>Card Special | Premium Greeting Cards</title>
+  <meta name="description"
+    content="Find the perfect greeting card for every occasion. Premium cards from Hallmark, Papyrus, and NobleWork.">
+  <meta name="keywords" content="greeting cards, birthday cards, anniversary cards, Hallmark, Papyrus, NobleWork">
+
+  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:wght@300;400;600&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:wght@300;400;500;600;700&display=swap"
     rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- logo -->
+  <link rel="icon" type="image/x-icon" href="LOGO.png">
 </head>
 
 <body>
-  <!-- navbar -->
-  <nav class="navbar navbar-expand-lg bg-danger-subtle px-lg-5 border-bottom border-3 border-danger fixed-top">
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg px-lg-5 fixed-top">
     <div class="container-fluid">
-      <img src="images/LOGO.png" alt="Logo" width="60">
-      <a class="navbar-brand h1 text-danger-emphasis fs-2 ms-2" href="#"><span
-          class="text-danger">Card</span>_Special</a>
+      <img scr="images/LOGO.png" alt="Card Special Logo" width="60" height="60">
+      <a class="navbar-brand h1 fs-2 ms-2" href="#home">
+        Card_Special
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-4">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-5">
           <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Brand</a>
-            <ul class="dropdown-menu text-center  border-danger">
-              <li><a class="dropdown-item" href="#Hallmark">Hallmark</a>
-              </li>
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+              <i class="fas fa-tags me-1"></i>Brands
+            </a>
+            <ul class="dropdown-menu text-center border-danger">
+              <li><a class="dropdown-item" href="#Hallmark">Hallmark</a></li>
               <li>
                 <hr class="dropdown-divider">
               </li>
-              <li><a class="dropdown-item" href="#Papyrus">Papyrus</a>
-              </li>
+              <li><a class="dropdown-item" href="#Papyrus">Papyrus</a></li>
               <li>
                 <hr class="dropdown-divider">
               </li>
-              <li><a class="dropdown-item" href="#NobleWork">NobleWork</a>
-              </li>
+              <li><a class="dropdown-item" href="#NobleWork">NobleWork</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Occasion</a>
-            <ul class="dropdown-menu text-center  border-danger">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+              <i class="fas fa-calendar-alt me-1"></i>Occasions
+            </a>
+            <ul class="dropdown-menu text-center border-danger">
               <li><a class="dropdown-item" href="#birthday">Birthday</a></li>
+                 <li>
+                <hr class="dropdown-divider">
+              </li>
               <li><a class="dropdown-item" href="#anniversary">Anniversary</a></li>
+                 <li>
+                <hr class="dropdown-divider">
+              </li>
               <li><a class="dropdown-item" href="#valentine">Valentine</a></li>
+                 <li>
+                <hr class="dropdown-divider">
+              </li>
               <li><a class="dropdown-item" href="#festival">Festival</a></li>
+                 <li>
+                <hr class="dropdown-divider">
+              </li>
               <li><a class="dropdown-item" href="#newyear">New Year</a></li>
             </ul>
           </li>
-          <li class="nav-item"><a class="nav-link" href="#location">Location</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#location"><i
+                class="fas fa-map-marker-alt me-1"></i>Location</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact"><i class="fas fa-envelope me-1"></i>Contact</a></li>
+          <li class="nav-item">
+            <a class="nav-link cart-icon" href="#" data-bs-toggle="modal" data-bs-target="#cartModal">
+              <i class="fas fa-shopping-cart me-1"></i>
+              <span class="badge bg-danger cart-count">0</span>
+            </a>
+          </li>
         </ul>
       </div>
     </div>
   </nav>
-  <!-- home section -->
+
+  <!-- Hero Section -->
   <section id="home" class="hero-section">
     <div class="hero-wrapper">
-      <img src="images/img 3.png" class="hero-bg-img" alt="Background">
+      <img scr="images/" class="hero-bg-img" alt="Beautiful greeting cards collection">
       <div class="hero-overlay"></div>
-      <!--home heading and button  -->
-      <div class="container h-100 d-flex align-items-center justify-content-center">
-        <div class="text-center text-white hero-content">
-          <h1 class="hero-heading">Find the perfect card <br>for Every Occasion</h1>
-          <button class="b1 mt-4">Explore Cards</button>
+
+      <div class="container h-100 d-flex align-items-center">
+        <div class="text-white hero-content">
+          <h1 class="hero-heading">Find the Perfect Card<br>for Every Occasion</h1>
+          <p class="hero-subheading">Premium greeting cards from Hallmark, Papyrus & NobleWork for birthdays,
+            anniversaries, and all special moments.</p>
+          <button class="b1 mt-2" onclick="scrollToSection('Hallmark')">Explore Collection <i
+              class="fas fa-arrow-right ms-2"></i></button>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- brand cards -->
-   <section>
+  <!-- Brand Cards Section -->
+  <section class="py-5">
     <div class="container">
-      <div class="text-center mb-5">
-        <div class="bgimg py-3"> <img src="images/o.jpg" alt=""
-            class="img-fluid rounded-circle border border-danger border-3" style="width:120px;"> </div>
-        <h1 class="text-danger display-4">Brand <span class="text-dark">Cards</span></h1>
-        <hr class="w-25 mx-auto text-danger border-4 opacity-100">
+      <div class="section-header">
+        <div class="bgimg py-3">
+          <img scr="images/o.jpg" alt="Brand Cards Icon" class="section-icon">
+        </div>
+        <h1 class="section-title">Premium <span class="text-dark">Brands</span></h1>
+        <div class="section-divider"></div>
+        <p class="lead text-muted">World-class greeting cards from trusted brands</p>
       </div>
-       <!-- Hallmark cards -->
-         <div id="Hallmark" class="text-center text-white">
-        <h1>Hallmark Cards</h1>
+
+      <!-- Hallmark Cards -->
+      <div id="Hallmark" class="text-center text-white">
+        <h1><i class="fas fa-crown me-3"></i>Hallmark Cards</h1>
+        <p class="mb-0">The gold standard in greeting cards since 1910</p>
       </div>
-      <div class="row g-4 px-lg-4" >
-        <div class="col-md-4">
-          <div class="card h-100 border-3 border-danger ">
-            <img src="images/1 (3).jpg" class="card-img-top" alt="...">
-            <div class="card-body" >
-              <h5 class="card-title">𝓗𝓪𝓹𝓹𝔂 𝓑𝓲𝓻𝓽𝓱𝓭𝓪𝔂</h5>
-              <p class="card-text small">Celebrate your loved one's special day with this elegant Hallmark birthday
-                card. Featuring beautifully designed golden balloons. <br><br><strong>Price: $4.99</strong></p>
-              <a href="#" class="btn btn-primary w-100">More Info</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4"  >
-          <div class="card h-100 border-3 border-danger ">
-            <img src="images/1 (1).png" class="card-img-top" alt="...">
+
+      <div class="row g-4 px-lg-4 mt-4">
+        <!-- Hallmark Card 1 -->
+        <div class="col-md-4 col-lg-4">
+          <div class="card h-100">
+            <span class="brand-badge">Hallmark</span>
+            <img scr="images/1 (3).jpg" class="card-img-top" alt="Hallmark Golden Birthday Card">
             <div class="card-body">
-              <h5 class="card-title">𝓴𝓪𝓹𝓹𝔂 𝓐𝓷𝓷𝓲𝓿𝓮𝓻𝓼𝓪𝓻𝔂</h5>
-              <p class="card-text small">Celebrate the journey of love and commitment with this beautifully crafted
-                Hallmark anniversary card. Heartfelt message. <br><br><strong>Price: $5.49</strong></p>
-              <a href="#" class="btn btn-primary w-100">More Info</a>
-            </div>
-          </div>
-          </div>
-            <div class="col-md-4">
-          <div class="card h-100 border-3 border-danger ">
-            <img src="images/1 (2).jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">ＨａｐｐｙＶａｌｅｎｔｉｎ</h5>
-              <p class="card-text small">Express your deepest love with this exquisite Hallmark Valentine’s card.
-                Featuring a delicate design and heartfelt message. <br><br><strong>Price: $4.75</strong></p>
-              <a href="#" class="btn btn-primary w-100">More Info</a>
-            </div>
-          </div>
-        </div>
-          <div class="col-md-4">
-          <div class="card h-100 border-3 border-danger ">
-            <img src="images/1 (1).jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">ℍ𝕒𝕡𝕡𝕪 𝔽𝕖𝕤𝕥𝕚𝕧𝕒𝕝</h5>
-              <p class="card-text small">Celebrate the joy and spirit of the season with this beautifully designed
-                Hallmark festival card. Vibrant colors. <br><br><strong>Price: $4.85</strong></p>
-              <a href="#" class="btn btn-primary w-100">More Info</a>
-            </div>
-          </div>
-        </div>
-           <div class="col-md-4">
-          <div class="card h-100 border-3 border-danger ">
-            <img src="images/2 (1).jpeg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">𝓗𝓪𝓹𝓹𝔂 𝓝𝓮𝔀 𝓨𝓮𝓪𝓻</h5>
-              <p class="card-text small">Ring in the new beginnings with this elegant Hallmark New Year card. Stylish
-                design and warm wishes. <br><br><strong>Price: $5.25</strong></p>
-              <a href="#" class="btn btn-primary w-100">More Info</a>
-            </div>
-          </div>
-        </div>
-         <div id="Papyrus" class="text-center text-white">
-        <h1>Papyrus Cards</h1>
-      </div>
-       <div class="col-md-4">
-          <div class="card h-100 border-3 border-danger ">
-            <img src="images/1 (4).jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">HᾼPPY BῖRTHDᾼY</h5>
-              <p class="card-text small">This Papyrus birthday card captures the essence of style and grace with its
-                artistic golden calligraphy on a rich black background. <br><br><strong>Price: $6.50</strong></p>
-              <a href="#" class="btn btn-primary w-100">More Info</a>
-            </div>
-          </div>
-        </div>
-        
-        <div class="col-md-4">
-          <div class="card h-100 border-3 border-danger ">
-            <img src="images/1 (2).png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">ℍ𝕒𝕡𝕡𝕪 𝔸𝕟𝕟𝕚𝕧𝕖𝕣𝕤𝕒𝕣𝕪</h5>
-              <p class="card-text small">This Papyrus anniversary card combines artistic flair with timeless romance.
-                Featuring delicate accents and luxurious textures. <br><br><strong>Price: $7.00</strong></p>
-              <a href="#" class="btn btn-primary w-100">More Info</a>
-            </div>
-          </div>
-        </div>
-        
-        <div class="col-md-4">
-          <div class="card h-100 border-3 border-danger ">
-            <img src="images/v.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">ℋ𝒶𝓅𝓅𝓎 𝒱𝒶𝓁𝑒𝓃𝓉𝒾𝓃𝑒</h5>
-              <p class="card-text small">This Papyrus Valentine’s card is crafted with elegance and charm, showcasing
-                intricate details and a luxurious feel. <br><br><strong>Price: $6.20</strong></p>
-              <a href="#" class="btn btn-primary w-100">More Info</a>
-            </div>
-          </div>
-        </div>
-        
-        <div class="col-md-4">
-          <div class="card h-100 border-3 border-danger ">
-            <img src="images/f.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">ＨａｐｐｙＦｅｓｔｉｖａｌ</h5>
-              <p class="card-text small">This Papyrus festival card combines elegant design with rich cultural motifs.
-                Ideal for any special celebration. <br><br><strong>Price: $6.40</strong></p>
-              <a href="#" class="btn btn-primary w-100">More Info</a>
-            </div>
-          </div>
-        </div>
-        
-        <div class="col-md-4">
-          <div class="card h-100 border-3 border-danger ">
-            <img src="images/2 (2).jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">𝓗𝓐𝓟𝓟𝓨 𝓝𝓔𝓦 𝓨𝓔𝓐𝓡</h5>
-              <p class="card-text small">Celebrate the promise of a fresh start with this luxurious Papyrus New Year
-                card. Sophisticated look. <br><br><strong>Price: $7.10</strong></p>
-              <a href="#" class="btn btn-primary w-100">More Info</a>
-            </div>
-          </div>
-        </div>
-          <div id="NobleWork" class="text-center text-white">
-        <h1>NobleWork Cards</h1>
-      </div>
-      
-        <div class="col-md-4">
-          <div class="card h-100 border-3 border-danger ">
-            <img src="images/1 (5).jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">𝕳𝖆𝖕𝖕𝖞 𝕭𝖎𝖗𝖙𝖍𝖉𝖆𝖞</h5>
-              <p class="card-text small">Brighten someone's birthday with this dazzling NobleWorks card, featuring a
-                sparkling gold glitter effect and elegant script. <br><br><strong>Price: $5.25</strong></p>
-              <a href="#" class="btn btn-primary w-100">More Info</a>
-            </div>
-          </div>
-        </div>
-        
-        <div class="col-md-4">
-          <div class="card h-100 border-3 border-danger ">
-            <img src="images/1 (3).png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">H-A-P-P-Y A-N-N-I-V-E-R-S-A-R-Y</h5>
-              <p class="card-text small">Add a touch of sparkle to your anniversary wishes with this vibrant NobleWorks
-                card. Bold design and warm sentiments. <br><br><strong>Price: $5.75</strong></p>
-              <a href="#" class="btn btn-primary w-100">More Info</a>
+              <h5 class="card-title">Golden Birthday Celebration</h5>
+              <p class="card-text small">Elegant Hallmark birthday card with golden balloons and heartfelt wishes.
+                Perfect for making someone's day special.</p>
+              <div class="d-flex justify-content-between align-items-center mt-3">
+                <span class="price-tag">$4.99</span>
+                <button class="btn btn-primary view-details-btn" data-title="Golden Birthday Celebration"
+                  data-price="4.99" data-brand="Hallmark" data-image="1 (3).jpg"
+                  data-description="This elegant Hallmark birthday card features beautiful golden balloons and heartfelt birthday wishes. Premium quality paper with gold foil detailing makes it perfect for special birthdays.">
+                  <i class="fas fa-info-circle me-2"></i>View Details
+                </button>
+              </div>
             </div>
           </div>
         </div>
 
-         <div class="col-md-4">
-          <div class="card h-100 border-3 border-danger ">
-            <img src="images/v1.jpg" class="card-img-top" alt="...">
+        <!-- Hallmark Card 2 -->
+        <div class="col-md-4 col-lg-4">
+          <div class="card h-100">
+            <span class="brand-badge">Hallmark</span>
+            <img scr="images/1 (1).png" class="card-img-top" alt="Hallmark Anniversary Card">
             <div class="card-body">
-              <h5 class="card-title">Happy Valentine</h5>
-              <p class="card-text small">Celebrate love in a playful and vibrant way with this NobleWorks Valentine’s
-                card. Colorful design and fun message. <br><br><strong>Price: $5.10</strong></p>
-              <a href="#" class="btn btn-primary w-100">More Info</a>
+              <h5 class="card-title">Timeless Anniversary</h5>
+              <p class="card-text small">Celebrate love's journey with this beautifully crafted Hallmark anniversary
+                card with romantic message.</p>
+              <div class="d-flex justify-content-between align-items-center mt-3">
+                <span class="price-tag">$5.49</span>
+                <button class="btn btn-primary view-details-btn" data-title="Timeless Anniversary" data-price="5.49"
+                  data-brand="Hallmark" data-image="1 (1).png"
+                  data-description="Celebrate years of love and commitment with this beautifully crafted Hallmark anniversary card. Features elegant floral design and heartfelt romantic message on premium textured paper.">
+                  <i class="fas fa-info-circle me-2"></i>View Details
+                </button>
+              </div>
             </div>
           </div>
         </div>
-        
-        <div class="col-md-4">
-          <div class="card h-100 border-3 border-danger ">
-            <img src="images/f1.webp" class="card-img-top" alt="...">
+
+        <!-- Hallmark Card 3 -->
+        <div class="col-md-4 col-lg-4">
+          <div class="card h-100">
+            <span class="brand-badge">Hallmark</span>
+            <img scr="images/1 (2).jpg" class="card-img-top" alt="Hallmark Valentine Card">
             <div class="card-body">
-              <h5 class="card-title">𝓗𝓪𝓹𝓹𝔂 𝓕𝓮𝓼𝓽𝓲𝓿𝓪𝓵</h5>
-              <p class="card-text small">Bring a burst of fun and festivity with this lively NobleWorks festival card.
-                Bold graphics and cheerful message. <br><br><strong>Price: $5.30</strong></p>
-              <a href="#" class="btn btn-primary w-100">More Info</a>
+              <h5 class="card-title">Romantic Valentine</h5>
+              <p class="card-text small">Express your deepest love with this exquisite Hallmark Valentine's card with
+                delicate floral design.</p>
+              <div class="d-flex justify-content-between align-items-center mt-3">
+                <span class="price-tag">$4.75</span>
+                <button class="btn btn-primary view-details-btn" data-title="Romantic Valentine" data-price="4.75"
+                  data-brand="Hallmark" data-image="1 (2).jpg"
+                  data-description="Express your deepest love with this exquisite Hallmark Valentine's card. Features delicate floral design, gold foil accents, and heartfelt romantic message. Perfect for expressing true love.">
+                  <i class="fas fa-info-circle me-2"></i>View Details
+                </button>
+              </div>
             </div>
           </div>
         </div>
-        
-        <div class="col-md-4">
-          <div class="card h-100 border-3 border-danger ">
-            <img src="images/2 (3).jpg" class="card-img-top" alt="...">
+
+        <!-- Hallmark Card 4 -->
+        <div class="col-md-4 col-lg-4">
+          <div class="card h-100">
+            <span class="brand-badge">Hallmark</span>
+            <img scr="images/1 (1).jpg" class="card-img-top" alt="Hallmark Festival Card">
             <div class="card-body">
-              <h5 class="card-title">𝓗ᴀᴘᴘʏ 𝓝ᴇᴡ 𝓨ᴇᴀʀ</h5>
-              <p class="card-text small">Start the year with a splash of fun using this vibrant NobleWorks New Year
-                card. Positivity and excitement. <br><br><strong>Price: $5.60</strong></p>
-              <a href="#" class="btn btn-primary w-100">More Info</a>
+              <h5 class="card-title">Festive Celebration Card</h5>
+              <p class="card-text small">Celebrate the joy of the season with this beautifully designed Hallmark
+                festival card with vibrant colors.</p>
+              <div class="d-flex justify-content-between align-items-center mt-3">
+                <span class="price-tag">$4.85</span>
+                <button class="btn btn-primary view-details-btn" data-title="Festive Celebration Card" data-price="4.85"
+                  data-brand="Hallmark" data-image="1 (1).jpg"
+                  data-description="Celebrate the joy and spirit of the season with this beautifully designed Hallmark festival card. Vibrant colors and warm holiday greetings on premium paper.">
+                  <i class="fas fa-info-circle me-2"></i>View Details
+                </button>
+              </div>
             </div>
           </div>
         </div>
-   </section>
- 
-  <!-- ocassion section -->
+
+        <!-- Hallmark Card 5 -->
+        <div class="col-md-4 col-lg-4">
+          <div class="card h-100">
+            <span class="brand-badge">Hallmark</span>
+            <img scr="images/2 (1).jpeg" class="card-img-top" alt="Hallmark New Year Card">
+            <div class="card-body">
+              <h5 class="card-title">New Beginnings Card</h5>
+              <p class="card-text small">Ring in new beginnings with this elegant Hallmark New Year card with stylish
+                gold foil design.</p>
+              <div class="d-flex justify-content-between align-items-center mt-3">
+                <span class="price-tag">$5.25</span>
+                <button class="btn btn-primary view-details-btn" data-title="New Beginnings Card" data-price="5.25"
+                  data-brand="Hallmark" data-image="2 (1).jpeg"
+                  data-description="Ring in the new beginnings with this elegant Hallmark New Year card. Stylish gold foil design with warm wishes for the coming year on premium paper.">
+                  <i class="fas fa-info-circle me-2"></i>View Details
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Papyrus Cards Header -->
+        <div class="col-12 mt-5">
+          <div id="Papyrus" class="text-center text-white">
+            <h1><i class="fas fa-feather-alt me-3"></i>Papyrus Cards</h1>
+            <p class="mb-0">Luxury cards with artistic craftsmanship</p>
+          </div>
+        </div>
+
+        <!-- Papyrus Card 1 -->
+        <div class="col-md-4 col-lg-4 mt-4">
+          <div class="card h-100">
+            <span class="brand-badge"
+              style="background: linear-gradient(135deg, #9c27b0 0%, #673ab7 100%);">Papyrus</span>
+            <img scr="images/1 (4).jpg" class="card-img-top" alt="Papyrus Black & Gold Birthday Card">
+            <div class="card-body">
+              <h5 class="card-title">Luxury Black & Gold</h5>
+              <p class="card-text small">Papyrus birthday card with artistic golden calligraphy on rich black
+                background. A statement piece.</p>
+              <div class="d-flex justify-content-between align-items-center mt-3">
+                <span class="price-tag">$6.50</span>
+                <button class="btn btn-primary view-details-btn" data-title="Luxury Black & Gold" data-price="6.50"
+                  data-brand="Papyrus" data-image="1 (4).jpg"
+                  data-description="This Papyrus birthday card features artistic golden calligraphy on a rich black background. The luxury textured paper and embossed details make it a statement piece for special birthdays.">
+                  <i class="fas fa-info-circle me-2"></i>View Details
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Papyrus Card 2 -->
+        <div class="col-md-4 col-lg-4 mt-4">
+          <div class="card h-100">
+            <span class="brand-badge"
+              style="background: linear-gradient(135deg, #9c27b0 0%, #673ab7 100%);">Papyrus</span>
+            <img scr="images/1 (2).png" class="card-img-top" alt="Papyrus Floral Anniversary Card">
+            <div class="card-body">
+              <h5 class="card-title">Artistic Anniversary</h5>
+              <p class="card-text small">Papyrus anniversary card combining artistic flair with timeless romance and
+                luxurious textures.</p>
+              <div class="d-flex justify-content-between align-items-center mt-3">
+                <span class="price-tag">$7.00</span>
+                <button class="btn btn-primary view-details-btn" data-title="Artistic Anniversary" data-price="7.00"
+                  data-brand="Papyrus" data-image="1 (2).png"
+                  data-description="Papyrus anniversary card combining artistic flair with timeless romance. Features delicate floral accents, luxurious textures, and hand-crafted details. Premium quality for special celebrations.">
+                  <i class="fas fa-info-circle me-2"></i>View Details
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Papyrus Card 3 -->
+        <div class="col-md-4 col-lg-4 mt-4">
+          <div class="card h-100">
+            <span class="brand-badge"
+              style="background: linear-gradient(135deg, #9c27b0 0%, #673ab7 100%);">Papyrus</span>
+            <img scr="images/v.png" class="card-img-top" alt="Papyrus Elegant Valentine Card">
+            <div class="card-body">
+              <h5 class="card-title">Elegant Valentine</h5>
+              <p class="card-text small">Crafted with elegance and charm, this Papyrus Valentine's card showcases
+                intricate luxurious details.</p>
+              <div class="d-flex justify-content-between align-items-center mt-3">
+                <span class="price-tag">$6.20</span>
+                <button class="btn btn-primary view-details-btn" data-title="Elegant Valentine" data-price="6.20"
+                  data-brand="Papyrus" data-image="v.png"
+                  data-description="Crafted with elegance and charm, this Papyrus Valentine's card showcases intricate details and luxurious feel. Features embossed patterns, foil accents, and premium paper quality.">
+                  <i class="fas fa-info-circle me-2"></i>View Details
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Papyrus Card 4 -->
+        <div class="col-md-4 col-lg-4 mt-4">
+          <div class="card h-100">
+            <span class="brand-badge"
+              style="background: linear-gradient(135deg, #9c27b0 0%, #673ab7 100%);">Papyrus</span>
+            <img scr="images/f.jpg" class="card-img-top" alt="Papyrus Festival Card">
+            <div class="card-body">
+              <h5 class="card-title">Cultural Festival Card</h5>
+              <p class="card-text small">Papyrus festival card combines elegant design with rich cultural motifs for
+                special celebrations.</p>
+              <div class="d-flex justify-content-between align-items-center mt-3">
+                <span class="price-tag">$6.40</span>
+                <button class="btn btn-primary view-details-btn" data-title="Cultural Festival Card" data-price="6.40"
+                  data-brand="Papyrus" data-image="f.jpg"
+                  data-description="This Papyrus festival card combines elegant design with rich cultural motifs. Ideal for any special celebration with premium paper and artistic design.">
+                  <i class="fas fa-info-circle me-2"></i>View Details
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Papyrus Card 5 -->
+        <div class="col-md-4 col-lg-4 mt-4">
+          <div class="card h-100">
+            <span class="brand-badge"
+              style="background: linear-gradient(135deg, #9c27b0 0%, #673ab7 100%);">Papyrus</span>
+            <img scr="images/2 (2).jpg" class="card-img-top" alt="Papyrus New Year Card">
+            <div class="card-body">
+              <h5 class="card-title">Luxury New Year Card</h5>
+              <p class="card-text small">Celebrate fresh start with this luxurious Papyrus New Year card with
+                sophisticated look.</p>
+              <div class="d-flex justify-content-between align-items-center mt-3">
+                <span class="price-tag">$7.10</span>
+                <button class="btn btn-primary view-details-btn" data-title="Luxury New Year Card" data-price="7.10"
+                  data-brand="Papyrus" data-image="2 (2).jpg"
+                  data-description="Celebrate the promise of a fresh start with this luxurious Papyrus New Year card. Sophisticated look with premium materials and elegant design.">
+                  <i class="fas fa-info-circle me-2"></i>View Details
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <!-- NobleWork Cards Header -->
+        <div class="col-12 mt-5">
+          <div id="NobleWork" class="text-center text-white">
+            <h1><i class="fas fa-wand-magic-sparkles me-3"></i>NobleWork Cards</h1>
+            <p class="mb-0">Fun, vibrant cards with sparkle and personality</p>
+          </div>
+        </div>
+
+        <!-- NobleWork Card 1 -->
+        <div class="col-md-4 col-lg-4 mt-4">
+          <div class="card h-100">
+            <span class="brand-badge"
+              style="background: linear-gradient(135deg, #ff9800 0%, #ff5722 100%);">NobleWork</span>
+            <img scr="images/1 (5).jpg" class="card-img-top" alt="NobleWork Sparkling Birthday Card">
+            <div class="card-body">
+              <h5 class="card-title">Sparkling Birthday</h5>
+              <p class="card-text small">Dazzling NobleWorks birthday card with sparkling gold glitter effect and
+                elegant script design.</p>
+              <div class="d-flex justify-content-between align-items-center mt-3">
+                <span class="price-tag">$5.25</span>
+                <button class="btn btn-primary view-details-btn" data-title="Sparkling Birthday" data-price="5.25"
+                  data-brand="NobleWork" data-image="1 (5).jpg"
+                  data-description="Brighten someone's birthday with this dazzling NobleWorks card, featuring a sparkling gold glitter effect and elegant script design on premium paper.">
+                  <i class="fas fa-info-circle me-2"></i>View Details
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- NobleWork Card 2 -->
+        <div class="col-md-4 col-lg-4 mt-4">
+          <div class="card h-100">
+            <span class="brand-badge"
+              style="background: linear-gradient(135deg, #ff9800 0%, #ff5722 100%);">NobleWork</span>
+            <img scr="images/1 (3).png" class="card-img-top" alt="NobleWork Anniversary Card">
+            <div class="card-body">
+              <h5 class="card-title">Vibrant Anniversary</h5>
+              <p class="card-text small">Add sparkle to anniversary wishes with vibrant NobleWorks card with bold
+                colorful design.</p>
+              <div class="d-flex justify-content-between align-items-center mt-3">
+                <span class="price-tag">$5.75</span>
+                <button class="btn btn-primary view-details-btn" data-title="Vibrant Anniversary" data-price="5.75"
+                  data-brand="NobleWork" data-image="1 (3).png"
+                  data-description="Add a touch of sparkle to your anniversary wishes with this vibrant NobleWorks card. Bold design and warm sentiments on quality paper.">
+                  <i class="fas fa-info-circle me-2"></i>View Details
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- NobleWork Card 3 -->
+        <div class="col-md-4 col-lg-4 mt-4">
+          <div class="card h-100">
+            <span class="brand-badge"
+              style="background: linear-gradient(135deg, #ff9800 0%, #ff5722 100%);">NobleWork</span>
+            <img scr="images/v1.jpg" class="card-img-top" alt="NobleWork Valentine Card">
+            <div class="card-body">
+              <h5 class="card-title">Playful Valentine</h5>
+              <p class="card-text small">Celebrate love playfully with this NobleWorks Valentine's card with colorful
+                design.</p>
+              <div class="d-flex justify-content-between align-items-center mt-3">
+                <span class="price-tag">$5.10</span>
+                <button class="btn btn-primary view-details-btn" data-title="Playful Valentine" data-price="5.10"
+                  data-brand="NobleWork" data-image="v1.jpg"
+                  data-description="Celebrate love in a playful and vibrant way with this NobleWorks Valentine's card. Colorful design and fun heartfelt message on quality paper.">
+                  <i class="fas fa-info-circle me-2"></i>View Details
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- NobleWork Card 4 -->
+        <div class="col-md-4 col-lg-4 mt-4">
+          <div class="card h-100">
+            <span class="brand-badge"
+              style="background: linear-gradient(135deg, #ff9800 0%, #ff5722 100%);">NobleWork</span>
+            <img scr="images/f1.webp" class="card-img-top" alt="NobleWork Festival Card">
+            <div class="card-body">
+              <h5 class="card-title">Fun Festival Card</h5>
+              <p class="card-text small">Bring burst of fun and festivity with lively NobleWorks festival card with bold
+                graphics.</p>
+              <div class="d-flex justify-content-between align-items-center mt-3">
+                <span class="price-tag">$5.30</span>
+                <button class="btn btn-primary view-details-btn" data-title="Fun Festival Card" data-price="5.30"
+                  data-brand="NobleWork" data-image="f1.webp"
+                  data-description="Bring a burst of fun and festivity with this lively NobleWorks festival card. Bold graphics and cheerful message on quality paper.">
+                  <i class="fas fa-info-circle me-2"></i>View Details
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- NobleWork Card 5 -->
+        <div class="col-md-4 col-lg-4 mt-4">
+          <div class="card h-100">
+            <span class="brand-badge"
+              style="background: linear-gradient(135deg, #ff9800 0%, #ff5722 100%);">NobleWork</span>
+            <img scr="images/2 (3).jpg" class="card-img-top" alt="NobleWork New Year Card">
+            <div class="card-body">
+              <h5 class="card-title">Fun New Year Card</h5>
+              <p class="card-text small">Start year with splash of fun using vibrant NobleWorks New Year card with
+                positivity.</p>
+              <div class="d-flex justify-content-between align-items-center mt-3">
+                <span class="price-tag">$5.60</span>
+                <button class="btn btn-primary view-details-btn" data-title="Fun New Year Card" data-price="5.60"
+                  data-brand="NobleWork" data-image="2 (3).jpg"
+                  data-description="Start the year with a splash of fun using this vibrant NobleWorks New Year card. Positivity and excitement with colorful design.">
+                  <i class="fas fa-info-circle me-2"></i>View Details
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="text-center mt-5">
+          <button class="btn btn-outline-danger btn-lg px-5" onclick="scrollToSection('Hallmark')">
+            <i class="fas fa-th-large me-2"></i>View All Brand Cards
+          </button>
+        </div>
+      </div>
+  </section>
+
+  <!-- Occasion Section -->
   <section id="ocassion" class="py-5">
     <div class="container">
-      <div class="text-center mb-5">
-        <div class="bgimg py-3"> <img src="images/o.jpg" alt=""
-            class="img-fluid rounded-circle border border-danger border-3" style="width:120px;"> </div>
-        <h1 class="text-danger display-4">Occasion <span class="text-dark">Cards</span></h1>
-        <hr class="w-25 mx-auto text-danger border-4 opacity-100">
+      <div class="section-header">
+        <div class="bgimg py-3">
+          <img scr="images/o.jpg" alt="Occasion Cards Icon" class="section-icon">
+        </div>
+        <h1 class="section-title">Cards by <span class="text-dark">Occasion</span></h1>
+        <div class="section-divider"></div>
+        <p class="lead text-muted">Perfect cards for every special moment in life</p>
       </div>
-      <!-- ocassion cards -->
-      <!-- birthday cards -->
-      <div id="birthday" class="text-center text-white">
-        <h1>Birthday Cards</h1>
+
+      <!-- Occasion Categories -->
+      <div class="row g-4 mb-5">
+        <div class="col-md-4">
+          <div class="card border-0 shadow-sm text-center h-100 occasion-category"
+            onclick="scrollToSection('birthday')">
+            <div class="card-body p-4">
+              <div class="icon-wrapper mb-3">
+                <i class="fas fa-birthday-cake fa-3x text-danger"></i>
+              </div>
+              <h3 class="card-title">Birthday</h3>
+              <p class="card-text">Make their day unforgettable with our birthday collection</p>
+              <span class="badge bg-danger">15+ Designs</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card border-0 shadow-sm text-center h-100 occasion-category"
+            onclick="scrollToSection('anniversary')">
+            <div class="card-body p-4">
+              <div class="icon-wrapper mb-3">
+                <i class="fas fa-heart fa-3x text-danger"></i>
+              </div>
+              <h3 class="card-title">Anniversary</h3>
+              <p class="card-text">Celebrate love and commitment with elegant anniversary cards</p>
+              <span class="badge bg-danger">12+ Designs</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card border-0 shadow-sm text-center h-100 occasion-category"
+            onclick="scrollToSection('valentine')">
+            <div class="card-body p-4">
+              <div class="icon-wrapper mb-3">
+                <i class="fas fa-heartbeat fa-3x text-danger"></i>
+              </div>
+              <h3 class="card-title">Valentine</h3>
+              <p class="card-text">Express your love with romantic Valentine's Day cards</p>
+              <span class="badge bg-danger">10+ Designs</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card border-0 shadow-sm text-center h-100 occasion-category"
+            onclick="scrollToSection('festival')">
+            <div class="card-body p-4">
+              <div class="icon-wrapper mb-3">
+                <i class="fas fa-holly-berry fa-3x text-danger"></i>
+              </div>
+              <h3 class="card-title">Festival</h3>
+              <p class="card-text">Celebrate holidays and festivals with our special collection</p>
+              <span class="badge bg-danger">8+ Designs</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card border-0 shadow-sm text-center h-100 occasion-category" onclick="scrollToSection('newyear')">
+            <div class="card-body p-4">
+              <div class="icon-wrapper mb-3">
+                <i class="fas fa-champagne-glasses fa-3x text-danger"></i>
+              </div>
+              <h3 class="card-title">New Year</h3>
+              <p class="card-text">Welcome new beginnings with our festive New Year cards</p>
+              <span class="badge bg-danger">6+ Designs</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Birthday Cards Section -->
+        <div id="birthday" class="text-center text-white">
+          <h1><i class="fas fa-birthday-cake me-3"></i>Birthday Cards</h1>
+          <p class="mb-0">Celebrate special days with our birthday collection</p>
+        </div>
+
+        <div class="row g-4 px-lg-4 mt-4">
+          <!-- Birthday cards from all brands -->
+          <div class="col-md-4">
+            <div class="card h-100">
+              <span class="brand-badge">Hallmark</span>
+              <img scr="images/1 (3).jpg" class="card-img-top" alt="Hallmark Birthday Card">
+              <div class="card-body">
+                <h5 class="card-title">Golden Birthday</h5>
+                <p class="card-text small">Elegant golden balloons design for a special celebration.</p>
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                  <span class="price-tag">$4.99</span>
+                  <button class="btn btn-primary view-details-btn" data-title="Golden Birthday" data-price="4.99"
+                    data-brand="Hallmark" data-image="1 (3).jpg"
+                    data-description="Perfect birthday card with golden balloons and elegant design for special celebrations.">
+                    <i class="fas fa-info-circle me-2"></i>View Details
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card h-100">
+              <span class="brand-badge"
+                style="background: linear-gradient(135deg, #9c27b0 0%, #673ab7 100%);">Papyrus</span>
+              <img scr="images/1 (4).jpg" class="card-img-top" alt="Papyrus Birthday Card">
+              <div class="card-body">
+                <h5 class="card-title">Luxury Design</h5>
+                <p class="card-text small">Artistic black and gold calligraphy for a sophisticated birthday.</p>
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                  <span class="price-tag">$6.50</span>
+                  <button class="btn btn-primary view-details-btn" data-title="Luxury Design" data-price="6.50"
+                    data-brand="Papyrus" data-image="1 (4).jpg"
+                    data-description="Luxury birthday card with black and gold calligraphy for sophisticated celebrations.">
+                    <i class="fas fa-info-circle me-2"></i>View Details
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card h-100">
+              <span class="brand-badge"
+                style="background: linear-gradient(135deg, #ff9800 0%, #ff5722 100%);">NobleWork</span>
+              <img scr="images/1 (5).jpg" class="card-img-top" alt="NobleWork Birthday Card">
+              <div class="card-body">
+                <h5 class="card-title">Sparkle Design</h5>
+                <p class="card-text small">Sparkling glitter effect for a fun and festive birthday card.</p>
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                  <span class="price-tag">$5.25</span>
+                  <button class="btn btn-primary view-details-btn" data-title="Sparkle Design" data-price="5.25"
+                    data-brand="NobleWork" data-image="1 (5).jpg"
+                    data-description="Fun birthday card with sparkling glitter effect for festive celebrations.">
+                    <i class="fas fa-info-circle me-2"></i>View Details
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Anniversary Cards Section -->
+        <div id="anniversary" class="text-center text-white mt-5">
+          <h1><i class="fas fa-heart me-3"></i>Anniversary Cards</h1>
+          <p class="mb-0">Celebrate love's journey with our anniversary collection</p>
+        </div>
+
+        <div class="row g-4 px-lg-4 mt-4">
+          <div class="col-md-4">
+            <div class="card h-100">
+              <span class="brand-badge">Hallmark</span>
+              <img scr="images/1 (1).png" class="card-img-top" alt="Hallmark Anniversary Card">
+              <div class="card-body">
+                <h5 class="card-title">Timeless Love</h5>
+                <p class="card-text small">Elegant design for celebrating years of love and commitment.</p>
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                  <span class="price-tag">$5.49</span>
+                  <button class="btn btn-primary view-details-btn" data-title="Timeless Love" data-price="5.49"
+                    data-brand="Hallmark" data-image="1 (1).png"
+                    data-description="Elegant anniversary card for celebrating years of love and commitment.">
+                    <i class="fas fa-info-circle me-2"></i>View Details
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card h-100">
+              <span class="brand-badge"
+                style="background: linear-gradient(135deg, #9c27b0 0%, #673ab7 100%);">Papyrus</span>
+              <img scr="images/1 (2).png" class="card-img-top" alt="Papyrus Anniversary Card">
+              <div class="card-body">
+                <h5 class="card-title">Romantic Floral</h5>
+                <p class="card-text small">Luxurious floral design for a memorable anniversary.</p>
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                  <span class="price-tag">$7.00</span>
+                  <button class="btn btn-primary view-details-btn" data-title="Romantic Floral" data-price="7.00"
+                    data-brand="Papyrus" data-image="1 (2).png"
+                    data-description="Luxurious floral design anniversary card for memorable celebrations.">
+                    <i class="fas fa-info-circle me-2"></i>View Details
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card h-100">
+              <span class="brand-badge"
+                style="background: linear-gradient(135deg, #ff9800 0%, #ff5722 100%);">NobleWork</span>
+              <img scr="images/1 (3).png" class="card-img-top" alt="NobleWork Anniversary Card">
+              <div class="card-body">
+                <h5 class="card-title">Colorful Celebration</h5>
+                <p class="card-text small">Vibrant and colorful design for anniversary celebrations.</p>
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                  <span class="price-tag">$5.75</span>
+                  <button class="btn btn-primary view-details-btn" data-title="Colorful Celebration" data-price="5.75"
+                    data-brand="NobleWork" data-image="1 (3).png"
+                    data-description="Vibrant and colorful design anniversary card for joyful celebrations.">
+                    <i class="fas fa-info-circle me-2"></i>View Details
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Valentine Cards Section -->
+        <div id="valentine" class="text-center text-white mt-5">
+          <h1><i class="fas fa-heartbeat me-3"></i>Valentine Cards</h1>
+          <p class="mb-0">Express your love with romantic Valentine's Day cards</p>
+        </div>
+
+        <div class="row g-4 px-lg-4 mt-4">
+          <div class="col-md-4">
+            <div class="card h-100">
+              <span class="brand-badge">Hallmark</span>
+              <img scr="images/1 (2).jpg" class="card-img-top" alt="Hallmark Valentine Card">
+              <div class="card-body">
+                <h5 class="card-title">Romantic Valentine</h5>
+                <p class="card-text small">Express your deepest love with this exquisite Hallmark Valentine's card.</p>
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                  <span class="price-tag">$4.75</span>
+                  <button class="btn btn-primary view-details-btn" data-title="Romantic Valentine" data-price="4.75"
+                    data-brand="Hallmark" data-image="1 (2).jpg"
+                    data-description="Express your deepest love with this exquisite Hallmark Valentine's card. Features delicate floral design and heartfelt romantic message.">
+                    <i class="fas fa-info-circle me-2"></i>View Details
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card h-100">
+              <span class="brand-badge"
+                style="background: linear-gradient(135deg, #9c27b0 0%, #673ab7 100%);">Papyrus</span>
+              <img scr="images/v.png" class="card-img-top" alt="Papyrus Valentine Card">
+              <div class="card-body">
+                <h5 class="card-title">Elegant Valentine</h5>
+                <p class="card-text small">Crafted with elegance and charm, this Papyrus Valentine's card showcases
+                  luxurious details.</p>
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                  <span class="price-tag">$6.20</span>
+                  <button class="btn btn-primary view-details-btn" data-title="Elegant Valentine" data-price="6.20"
+                    data-brand="Papyrus" data-image="v.png"
+                    data-description="Crafted with elegance and charm, this Papyrus Valentine's card showcases intricate details and luxurious feel.">
+                    <i class="fas fa-info-circle me-2"></i>View Details
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card h-100">
+              <span class="brand-badge"
+                style="background: linear-gradient(135deg, #ff9800 0%, #ff5722 100%);">NobleWork</span>
+              <img scr="images/v1.jpg" class="card-img-top" alt="NobleWork Valentine Card">
+              <div class="card-body">
+                <h5 class="card-title">Playful Valentine</h5>
+                <p class="card-text small">Celebrate love playfully with this NobleWorks Valentine's card with colorful
+                  design.</p>
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                  <span class="price-tag">$5.10</span>
+                  <button class="btn btn-primary view-details-btn" data-title="Playful Valentine" data-price="5.10"
+                    data-brand="NobleWork" data-image="v1.jpg"
+                    data-description="Celebrate love in a playful and vibrant way with this NobleWorks Valentine's card. Colorful design and fun heartfelt message.">
+                    <i class="fas fa-info-circle me-2"></i>View Details
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Festival Cards Section -->
+        <div id="festival" class="text-center text-white mt-5">
+          <h1><i class="fas fa-holly-berry me-3"></i>Festival Cards</h1>
+          <p class="mb-0">Celebrate holidays and festivals with our special collection</p>
+        </div>
+
+        <div class="row g-4 px-lg-4 mt-4">
+          <div class="col-md-4">
+            <div class="card h-100">
+              <span class="brand-badge">Hallmark</span>
+              <img scr="images/1 (1).jpg" class="card-img-top" alt="Hallmark Festival Card">
+              <div class="card-body">
+                <h5 class="card-title">Festive Celebration</h5>
+                <p class="card-text small">Celebrate the joy of the season with this beautifully designed Hallmark
+                  festival card.</p>
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                  <span class="price-tag">$4.85</span>
+                  <button class="btn btn-primary view-details-btn" data-title="Festive Celebration" data-price="4.85"
+                    data-brand="Hallmark" data-image="1 (1).jpg"
+                    data-description="Celebrate the joy and spirit of the season with this beautifully designed Hallmark festival card. Vibrant colors and warm holiday greetings.">
+                    <i class="fas fa-info-circle me-2"></i>View Details
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card h-100">
+              <span class="brand-badge"
+                style="background: linear-gradient(135deg, #9c27b0 0%, #673ab7 100%);">Papyrus</span>
+              <img scr="images/f.jpg" class="card-img-top" alt="Papyrus Festival Card">
+              <div class="card-body">
+                <h5 class="card-title">Cultural Festival</h5>
+                <p class="card-text small">Papyrus festival card combines elegant design with rich cultural motifs.</p>
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                  <span class="price-tag">$6.40</span>
+                  <button class="btn btn-primary view-details-btn" data-title="Cultural Festival" data-price="6.40"
+                    data-brand="Papyrus" data-image="f.jpg"
+                    data-description="This Papyrus festival card combines elegant design with rich cultural motifs. Ideal for any special celebration.">
+                    <i class="fas fa-info-circle me-2"></i>View Details
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card h-100">
+              <span class="brand-badge"
+                style="background: linear-gradient(135deg, #ff9800 0%, #ff5722 100%);">NobleWork</span>
+              <img scr="images/f1.webp" class="card-img-top" alt="NobleWork Festival Card">
+              <div class="card-body">
+                <h5 class="card-title">Fun Festival</h5>
+                <p class="card-text small">Bring burst of fun and festivity with lively NobleWorks festival card.</p>
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                  <span class="price-tag">$5.30</span>
+                  <button class="btn btn-primary view-details-btn" data-title="Fun Festival" data-price="5.30"
+                    data-brand="NobleWork" data-image="f1.webp"
+                    data-description="Bring a burst of fun and festivity with this lively NobleWorks festival card. Bold graphics and cheerful message.">
+                    <i class="fas fa-info-circle me-2"></i>View Details
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- New Year Cards Section -->
+        <div id="newyear" class="text-center text-white mt-5">
+          <h1><i class="fas fa-champagne-glasses me-3"></i>New Year Cards</h1>
+          <p class="mb-0">Welcome new beginnings with our festive New Year cards</p>
+        </div>
+
+        <div class="row g-4 px-lg-4 mt-4">
+          <div class="col-md-4">
+            <div class="card h-100">
+              <span class="brand-badge">Hallmark</span>
+              <img scr="images/2 (1).jpeg" class="card-img-top" alt="Hallmark New Year Card">
+              <div class="card-body">
+                <h5 class="card-title">New Beginnings</h5>
+                <p class="card-text small">Ring in new beginnings with this elegant Hallmark New Year card.</p>
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                  <span class="price-tag">$5.25</span>
+                  <button class="btn btn-primary view-details-btn" data-title="New Beginnings" data-price="5.25"
+                    data-brand="Hallmark" data-image="2 (1).jpeg"
+                    data-description="Ring in the new beginnings with this elegant Hallmark New Year card. Stylish gold foil design with warm wishes for the coming year.">
+                    <i class="fas fa-info-circle me-2"></i>View Details
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card h-100">
+              <span class="brand-badge"
+                style="background: linear-gradient(135deg, #9c27b0 0%, #673ab7 100%);">Papyrus</span>
+              <img scr="images/2 (2).jpg" class="card-img-top" alt="Papyrus New Year Card">
+              <div class="card-body">
+                <h5 class="card-title">Luxury New Year</h5>
+                <p class="card-text small">Celebrate fresh start with this luxurious Papyrus New Year card.</p>
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                  <span class="price-tag">$7.10</span>
+                  <button class="btn btn-primary view-details-btn" data-title="Luxury New Year" data-price="7.10"
+                    data-brand="Papyrus" data-image="2 (2).jpg"
+                    data-description="Celebrate the promise of a fresh start with this luxurious Papyrus New Year card. Sophisticated look with premium materials and elegant design.">
+                    <i class="fas fa-info-circle me-2"></i>View Details
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card h-100">
+              <span class="brand-badge"
+                style="background: linear-gradient(135deg, #ff9800 0%, #ff5722 100%);">NobleWork</span>
+              <img scr="images/2 (3).jpg" class="card-img-top" alt="NobleWork New Year Card">
+              <div class="card-body">
+                <h5 class="card-title">Fun New Year</h5>
+                <p class="card-text small">Start year with splash of fun using vibrant NobleWorks New Year card.</p>
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                  <span class="price-tag">$5.60</span>
+                  <button class="btn btn-primary view-details-btn" data-title="Fun New Year" data-price="5.60"
+                    data-brand="NobleWork" data-image="2 (3).jpg"
+                    data-description="Start the year with a splash of fun using this vibrant NobleWorks New Year card. Positivity and excitement with colorful design.">
+                    <i class="fas fa-info-circle me-2"></i>View Details
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- View All Button -->
+        <div class="text-center mt-5">
+          <button class="btn btn-danger btn-lg px-5" onclick="scrollToSection('birthday')">
+            <i class="fas fa-gift me-2"></i>Browse All Occasion Cards
+          </button>
+        </div>
       </div>
-      <div class="row g-4 px-lg-4" >
-        <div class="col-md-4">
-          <div class="card h-100 border-3 border-danger ">
-            <img src="images/1 (3).jpg" class="card-img-top" alt="...">
-            <div class="card-body" >
-              <h5 class="card-title">𝓗𝓪𝓹𝓹𝔂 𝓑𝓲𝓻𝓽𝓱𝓭𝓪𝔂</h5>
-              <p class="card-text small">Celebrate your loved one's special day with this elegant Hallmark birthday
-                card. Featuring beautifully designed golden balloons. <br><br><strong>Price: $4.99</strong></p>
-              <a href="#" class="btn btn-primary w-100">More Info</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card h-100 border-3 border-danger ">
-            <img src="images/1 (4).jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">HᾼPPY BῖRTHDᾼY</h5>
-              <p class="card-text small">This Papyrus birthday card captures the essence of style and grace with its
-                artistic golden calligraphy on a rich black background. <br><br><strong>Price: $6.50</strong></p>
-              <a href="#" class="btn btn-primary w-100">More Info</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card h-100 border-3 border-danger ">
-            <img src="images/1 (5).jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">𝕳𝖆𝖕𝖕𝖞 𝕭𝖎𝖗𝖙𝖍𝖉𝖆𝖞</h5>
-              <p class="card-text small">Brighten someone's birthday with this dazzling NobleWorks card, featuring a
-                sparkling gold glitter effect and elegant script. <br><br><strong>Price: $5.25</strong></p>
-              <a href="#" class="btn btn-primary w-100">More Info</a>
-            </div>
-          </div>
-        </div>
-        <!-- anniversery cards -->
-        <div id="anniversary" class="text-center text-white">
-          <h1>Anniversary Cards</h1>
-        </div>
-        <div class="col-md-4"  >
-          <div class="card h-100 border-3 border-danger ">
-            <img src="images/1 (1).png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">𝓴𝓪𝓹𝓹𝔂 𝓐𝓷𝓷𝓲𝓿𝓮𝓻𝓼𝓪𝓻𝔂</h5>
-              <p class="card-text small">Celebrate the journey of love and commitment with this beautifully crafted
-                Hallmark anniversary card. Heartfelt message. <br><br><strong>Price: $5.49</strong></p>
-              <a href="#" class="btn btn-primary w-100">More Info</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card h-100 border-3 border-danger ">
-            <img src="images/1 (2).png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">ℍ𝕒𝕡𝕡𝕪 𝔸𝕟𝕟𝕚𝕧𝕖𝕣𝕤𝕒𝕣𝕪</h5>
-              <p class="card-text small">This Papyrus anniversary card combines artistic flair with timeless romance.
-                Featuring delicate accents and luxurious textures. <br><br><strong>Price: $7.00</strong></p>
-              <a href="#" class="btn btn-primary w-100">More Info</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card h-100 border-3 border-danger ">
-            <img src="images/1 (3).png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">H-A-P-P-Y A-N-N-I-V-E-R-S-A-R-Y</h5>
-              <p class="card-text small">Add a touch of sparkle to your anniversary wishes with this vibrant NobleWorks
-                card. Bold design and warm sentiments. <br><br><strong>Price: $5.75</strong></p>
-              <a href="#" class="btn btn-primary w-100">More Info</a>
-            </div>
-          </div>
-        </div>
-        <!-- valentine cards -->
-        <div id="valentine" class="text-center text-white">
-          <h1> Valentine Cards</h1>
-        </div>
-        <div class="col-md-4">
-          <div class="card h-100 border-3 border-danger ">
-            <img src="images/1 (2).jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">ＨａｐｐｙＶａｌｅｎｔｉｎ</h5>
-              <p class="card-text small">Express your deepest love with this exquisite Hallmark Valentine’s card.
-                Featuring a delicate design and heartfelt message. <br><br><strong>Price: $4.75</strong></p>
-              <a href="#" class="btn btn-primary w-100">More Info</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card h-100 border-3 border-danger ">
-            <img src="images/v.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">ℋ𝒶𝓅𝓅𝓎 𝒱𝒶𝓁𝑒𝓃𝓉𝒾𝓃𝑒</h5>
-              <p class="card-text small">This Papyrus Valentine’s card is crafted with elegance and charm, showcasing
-                intricate details and a luxurious feel. <br><br><strong>Price: $6.20</strong></p>
-              <a href="#" class="btn btn-primary w-100">More Info</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card h-100 border-3 border-danger ">
-            <img src="images/v1.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Happy Valentine</h5>
-              <p class="card-text small">Celebrate love in a playful and vibrant way with this NobleWorks Valentine’s
-                card. Colorful design and fun message. <br><br><strong>Price: $5.10</strong></p>
-              <a href="#" class="btn btn-primary w-100">More Info</a>
-            </div>
-          </div>
-        </div>
-        <!-- festival cards -->
-        <div id="festival" class="text-center text-white">
-          <h1>Festival Cards</h1>
-        </div>
-        <div class="col-md-4">
-          <div class="card h-100 border-3 border-danger ">
-            <img src="images/1 (1).jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">ℍ𝕒𝕡𝕡𝕪 𝔽𝕖𝕤𝕥𝕚𝕧𝕒𝕝</h5>
-              <p class="card-text small">Celebrate the joy and spirit of the season with this beautifully designed
-                Hallmark festival card. Vibrant colors. <br><br><strong>Price: $4.85</strong></p>
-              <a href="#" class="btn btn-primary w-100">More Info</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card h-100 border-3 border-danger ">
-            <img src="images/f.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">ＨａｐｐｙＦｅｓｔｉｖａｌ</h5>
-              <p class="card-text small">This Papyrus festival card combines elegant design with rich cultural motifs.
-                Ideal for any special celebration. <br><br><strong>Price: $6.40</strong></p>
-              <a href="#" class="btn btn-primary w-100">More Info</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card h-100 border-3 border-danger ">
-            <img src="images/f1.webp" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">𝓗𝓪𝓹𝓹𝔂 𝓕𝓮𝓼𝓽𝓲𝓿𝓪𝓵</h5>
-              <p class="card-text small">Bring a burst of fun and festivity with this lively NobleWorks festival card.
-                Bold graphics and cheerful message. <br><br><strong>Price: $5.30</strong></p>
-              <a href="#" class="btn btn-primary w-100">More Info</a>
-            </div>
-          </div>
-        </div>
-        <!-- new year cards -->
-        <div id="newyear" class="text-center text-white">
-          <h1>New Year Cards</h1>
-        </div>
-        <div class="col-md-4">
-          <div class="card h-100 border-3 border-danger ">
-            <img src="images/2 (1).jpeg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">𝓗𝓪𝓹𝓹𝔂 𝓝𝓮𝔀 𝓨𝓮𝓪𝓻</h5>
-              <p class="card-text small">Ring in the new beginnings with this elegant Hallmark New Year card. Stylish
-                design and warm wishes. <br><br><strong>Price: $5.25</strong></p>
-              <a href="#" class="btn btn-primary w-100">More Info</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card h-100 border-3 border-danger ">
-            <img src="images/2 (2).jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">𝓗𝓐𝓟𝓟𝓨 𝓝𝓔𝓦 𝓨𝓔𝓐𝓡</h5>
-              <p class="card-text small">Celebrate the promise of a fresh start with this luxurious Papyrus New Year
-                card. Sophisticated look. <br><br><strong>Price: $7.10</strong></p>
-              <a href="#" class="btn btn-primary w-100">More Info</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card h-100 border-3 border-danger ">
-            <img src="images/2 (3).jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">𝓗ᴀᴘᴘʏ 𝓝ᴇᴡ 𝓨ᴇᴀʀ</h5>
-              <p class="card-text small">Start the year with a splash of fun using this vibrant NobleWorks New Year
-                card. Positivity and excitement. <br><br><strong>Price: $5.60</strong></p>
-              <a href="#" class="btn btn-primary w-100">More Info</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
   </section>
-  <!-- location section -->
+
+  <!-- Location Section -->
   <section id="location" class="py-5">
     <div class="container">
-      <div class="bgimg py-3"> <img src="images/1.jpg" alt=""
-          class="img-fluid rounded-circle border border-danger border-3" style="width:120px;"> </div>
-      <div class="borderhd mb-5">
-        <h1 class="text-white text-center"> Brand <span class="text-warning">Location</span></h1>
+      <div class="section-header">
+        <div class="bgimg py-3">
+          <img scr="images/1.jpg" alt="Location Icon" class="section-icon">
+        </div>
+        <div class="borderhd mb-5">
+          <h1 class="text-white text-center"><i class="fas fa-map-marked-alt me-3"></i>Store <span
+              class="text-warning">Locations</span></h1>
+        </div>
+        <p class="lead text-white text-center">Visit our brand stores worldwide</p>
       </div>
-      <!-- brand embad maps -->
+
       <div class="row g-4">
+        <!-- Hallmark Location -->
         <div class="col-md-4">
-          <div class="card border-3 border-danger h-100 ">
-            <iframe src="https://www.google.com/maps/embed?pb=..." height="300" style="border:0;" allowfullscreen=""
-              loading="lazy"></iframe>
+          <div class="location-card">
+            <div class="map-placeholder">
+              <i class="fas fa-map fa-3x text-white"></i>
+            </div>
             <div class="card-body">
-              <h5 class="card-title text-danger fw-bold">HALLMARK</h5>
-              <p class="card-text">150 Rue Sainte-Catherine O, Montréal, QC H2Z 1Z8, Canada.</p>
+              <h5 class="card-title text-danger-emphasis fw-bold"><i class="fas fa-crown me-2"></i>Hallmark Flagship Store</h5>
+              <p class="card-text">2501 McGee St, Kansas City, MO 64108, USA</p>
+              <div class="store-info">
+                <p><i class="fas fa-clock me-2"></i>Mon-Sat: 9AM-9PM, Sun: 10AM-6PM</p>
+                <p><i class="fas fa-phone me-2"></i>+1 (816) 274-5678</p>
+              </div>
+              <button class="btn btn-outline-light btn-sm mt-2 store-details-btn" data-store="Hallmark Flagship Store"
+                data-address="2501 McGee St, Kansas City, MO 64108, USA" data-hours="Mon-Sat: 9AM-9PM, Sun: 10AM-6PM"
+                data-phone="+1 (816) 274-5678">
+                <i class="fas fa-directions me-1"></i>Store Details
+              </button>
             </div>
           </div>
         </div>
+
+        <!-- Papyrus Location -->
         <div class="col-md-4">
-          <div class="card border-3 border-danger h-100 ">
-            <iframe src="https://www.google.com/maps/embed?pb=..." height="300" style="border:0;" allowfullscreen=""
-              loading="lazy"></iframe>
+          <div class="location-card">
+            <div class="map-placeholder">
+              <i class="fas fa-map fa-3x text-white"></i>
+            </div>
             <div class="card-body">
-              <h5 class="card-title text-danger fw-bold">PAPYRUS</h5>
-              <p class="card-text">852 Lexington Ave, New York, NY 10065, United States.</p>
+              <h5 class="card-title text-danger-emphasis fw-bold"><i class="fas fa-feather-alt me-2 "></i >Papyrus Luxury Store
+              </h5>
+              <p class="card-text">177 Post St, San Francisco, CA 94108, USA</p>
+              <div class="store-info">
+                <p><i class="fas fa-clock me-2"></i>Mon-Sat: 10AM-8PM, Sun: 11AM-5PM</p>
+                <p><i class="fas fa-phone me-2"></i>+1 (415) 781-9999</p>
+              </div>
+              <button class="btn btn-outline-light btn-sm mt-2 store-details-btn" data-store="Papyrus Luxury Store"
+                data-address="177 Post St, San Francisco, CA 94108, USA" data-hours="Mon-Sat: 10AM-8PM, Sun: 11AM-5PM"
+                data-phone="+1 (415) 781-9999">
+                <i class="fas fa-directions me-1"></i>Store Details
+              </button>
             </div>
           </div>
         </div>
+
+        <!-- NobleWork Location -->
         <div class="col-md-4">
-          <div class="card border-3 border-danger h-100 ">
-            <iframe src="https://www.google.com/maps/embed?pb=..." height="300" style="border:0;" allowfullscreen=""
-              loading="lazy"></iframe>
+          <div class="location-card">
+            <div class="map-placeholder">
+              <i class="fas fa-map fa-3x text-white"></i>
+            </div>
             <div class="card-body">
-              <h5 class="card-title text-danger fw-bold">NOBLEWORK</h5>
-              <p class="card-text">500 Paterson Plank Rd, Union City, NJ 07087, United States.</p>
+              <h5 class="card-title text-danger-emphasis fw-bold"><i class="fas fa-wand-magic-sparkles me-2"></i>NobleWork Creative Store
+              </h5>
+              <p class="card-text">3100 E Imperial Hwy, Lynwood, CA 90262, USA</p>
+              <div class="store-info">
+                <p><i class="fas fa-clock me-2"></i>Mon-Fri: 9AM-7PM, Sat: 10AM-6PM, Sun: 11AM-4PM</p>
+                <p><i class="fas fa-phone me-2"></i>+1 (310) 537-8200</p>
+              </div>
+              <button class="btn btn-outline-light btn-sm mt-2 store-details-btn" data-store="NobleWork Creative Store"
+                data-address="3100 E Imperial Hwy, Lynwood, CA 90262, USA"
+                data-hours="Mon-Fri: 9AM-7PM, Sat: 10AM-6PM, Sun: 11AM-4PM" data-phone="+1 (310) 537-8200">
+                <i class="fas fa-directions me-1"></i>Store Details
+              </button>
             </div>
           </div>
         </div>
+      </div>
+
+      <div class="text-center mt-5">
+        <p class="text-white"><i class="fas fa-info-circle me-2"></i>Also available at 5000+ retailers worldwide
+          including Walmart, Target, and Barnes & Noble</p>
       </div>
     </div>
   </section>
-  <!-- contact section -->
+
+  <!-- Contact Section -->
   <section id="contact" class="py-5">
     <div class="container">
-      <div class="bgimg py-3 text-center"> <img src="images/3.jpg" alt=""
-          class="img-fluid rounded-circle border border-white border-3" style="width:120px;"> </div>
-      <h1 class="text-white text-center">CONTACT <span class="text-dark">US</span></h1>
-      <hr class="w-25 mx-auto text-white border-4 opacity-100 mb-5">
-      <!-- form  -->
-       
-      <div class="row justify-content-center">
-        <div class="col-md-6 bg-danger-subtle p-5 border border-3 border-danger rounded ">
-          <form class="row g-3">
-            <div class="col-12"><input type="text" class="form-control" placeholder="Name"></div>
-            <div class="col-12"><input type="email" class="form-control" placeholder="Email"></div>
-            <div class="col-12"><input type="text" class="form-control" placeholder="Address"></div>
-            <div class="col-12"><textarea class="form-control" placeholder="Subject" style="height: 120px;"></textarea>
-            </div>
-            <div class="col-12 text-center"><button type="submit" class="btn btn-danger px-5 btn-lg">Create my card</button>
-            </div>
-            <p class="text-center mt-6">
-  📧 Email us at:
-  <a href="mailto:cardspecial@gmail.com" class="fw-bold text-danger">
-    cardspecial@gmail.com
-  </a>
-</p>
+      <div class="section-header">
+        <div class="bgimg py-3">
+          <img scr="images/3.jpg" alt="Contact Icon" class="section-icon">
+        </div>
+        <h1 class="text-white text-center">Contact <span class="text-dark">Us</span></h1>
+        <div class="section-divider bg-white"></div>
+        <p class="lead text-white text-center">Get in touch for custom orders or inquiries</p>
+      </div>
 
-          </form>
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <div class="contact-form-container">
+            <form id="contactForm" class="row g-3">
+              <div class="col-md-6">
+                <label for="name" class="form-label">Full Name *</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+              </div>
+              <div class="col-md-6">
+                <label for="email" class="form-label">Email Address *</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+              </div>
+              <div class="col-12">
+                <label for="phone" class="form-label">Phone Number</label>
+                <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number">
+              </div>
+              <div class="col-12">
+                <label for="subject" class="form-label">Message *</label>
+                <textarea class="form-control" id="subject"
+                  placeholder="Tell us about your card requirements or ask any questions..." style="height: 150px;"
+                  required></textarea>
+              </div>
+              <div class="col-12">
+                <label for="occasion" class="form-label">Occasion Type</label>
+                <select class="form-select" id="occasion">
+                  <option selected>Select an occasion</option>
+                  <option value="birthday">Birthday</option>
+                  <option value="anniversary">Anniversary</option>
+                  <option value="valentine">Valentine's Day</option>
+                  <option value="wedding">Wedding</option>
+                  <option value="festival">Festival/Holiday</option>
+                  <option value="corporate">Corporate</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="col-12">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="newsletter">
+                  <label class="form-check-label" for="newsletter">
+                    Subscribe to our newsletter for updates and offers
+                  </label>
+                </div>
+              </div>
+              <div class="col-12 text-center mt-4">
+                <button type="button" class="btn btn-danger px-5 btn-lg" id="submitFormBtn">
+                  <i class="fas fa-paper-plane me-2"></i>Send Message
+                </button>
+              </div>
+            </form>
+
+            <div class="contact-info text-center mt-5">
+              <h5 class="text-dark mb-4">Other Ways to Reach Us</h5>
+              <div class="row">
+                <div class="col-md-4 mb-3">
+                  <div class="p-3 border rounded">
+                    <i class="fas fa-envelope fa-2x text-danger mb-2"></i>
+                    <h6>Email</h6>
+                    <a href="mailto:cardspecial@gmail.com" class="email-link">cardspecial@gmail.com</a>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <div class="p-3 border rounded">
+                    <i class="fas fa-phone fa-2x text-danger mb-2"></i>
+                    <h6>Phone</h6>
+                    <p class="mb-0">+1 (800) 123-4567</p>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <div class="p-3 border rounded">
+                    <i class="fas fa-clock fa-2x text-danger mb-2"></i>
+                    <h6>Business Hours</h6>
+                    <p class="mb-0">Mon-Fri: 9AM-6PM EST</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    
   </section>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.2.0/jquery.smooth-scroll.min.js"></script>
+  <!-- Footer -->
+  <footer class="footer py-4">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+          <img scr="images/LOGO.png" alt="Logo" width="50" class="mb-2">
+          <h5 class="text-white d-inline-block ms-2">Card_Special</h5>
+          <p class="text-white-50 small mt-2">Premium greeting cards for every occasion since 2023</p>
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          <div class="social-icons mb-3">
+            <a href="#" class="text-white me-3"><i class="fab fa-facebook fa-lg"></i></a>
+            <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-lg"></i></a>
+            <a href="#" class="text-white me-3"><i class="fab fa-twitter fa-lg"></i></a>
+            <a href="#" class="text-white"><i class="fab fa-pinterest fa-lg"></i></a>
+          </div>
+          <p class="text-white-50 small mb-0">&copy; 2023 Card_Special. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Card Detail Modal -->
+  <div class="modal fade" id="cardDetailModal" tabindex="-1" aria-labelledby="cardDetailModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="cardDetailModalLabel">Card Details</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-6">
+              <img id="modalCardImage" scr="images/" class="img-fluid rounded" alt="Card Image"
+                style="max-height: 400px; object-fit: cover;">
+            </div>
+            <div class="col-md-6">
+              <h3 id="modalCardTitle" class="mb-3"></h3>
+              <div class="mb-3">
+                <span class="badge bg-danger" id="modalCardBrand"></span>
+                <span class="ms-2 price-tag" id="modalCardPrice"></span>
+              </div>
+              <p id="modalCardDescription" class="mb-4"></p>
+
+              <div class="card-features mb-4">
+                <h6><i class="fas fa-star text-warning me-2"></i>Features:</h6>
+                <ul class="list-unstyled">
+                  <li><i class="fas fa-check text-success me-2"></i>Premium Quality Paper</li>
+                  <li><i class="fas fa-check text-success me-2"></i>Eco-friendly Materials</li>
+                  <li><i class="fas fa-check text-success me-2"></i>Hand-crafted Details</li>
+                  <li><i class="fas fa-check text-success me-2"></i>Elegant Packaging</li>
+                  <li><i class="fas fa-check text-success me-2"></i>Free Envelope Included</li>
+                </ul>
+              </div>
+
+              <div class="quantity-selector mb-4">
+                <label for="quantity" class="form-label">Quantity:</label>
+                <div class="input-group" style="width: 150px;">
+                  <button class="btn btn-outline-danger" type="button" onclick="changeQuantity(-1)">-</button>
+                  <input type="number" class="form-control text-center" id="quantity" value="1" min="1" max="10">
+                  <button class="btn btn-outline-danger" type="button" onclick="changeQuantity(1)">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-danger" onclick="addToCart()">
+            <i class="fas fa-cart-plus me-2"></i>Add to Cart
+          </button>
+          <button type="button" class="btn btn-primary" onclick="buyNow()">
+            <i class="fas fa-bolt me-2"></i>Buy Now
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Shopping Cart Modal -->
+  <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="cartModalLabel"><i class="fas fa-shopping-cart me-2"></i>Your Shopping Cart</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div id="cartItems" class="mb-4">
+            <!-- Cart items will be dynamically inserted here -->
+            <div class="text-center py-5">
+              <i class="fas fa-shopping-cart fa-3x text-muted mb-3"></i>
+              <p class="text-muted">Your cart is empty</p>
+              <button class="btn btn-outline-danger" data-bs-dismiss="modal">Continue Shopping</button>
+            </div>
+          </div>
+          <div class="cart-summary border-top pt-3" id="cartSummary" style="display: none;">
+            <div class="row">
+              <div class="col-md-6">
+                <h6>Cart Summary</h6>
+                <p class="text-muted small">Free shipping on orders over $50</p>
+              </div>
+              <div class="col-md-6 text-end">
+                <p>Subtotal: <span class="fw-bold" id="cartSubtotal">$0.00</span></p>
+                <p>Shipping: <span class="fw-bold" id="cartShipping">$5.00</span></p>
+                <p>Tax: <span class="fw-bold" id="cartTax">$0.00</span></p>
+                <h5>Total: <span class="text-danger" id="cartTotal">$0.00</span></h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Continue Shopping</button>
+          <button type="button" class="btn btn-danger" onclick="checkout()" disabled id="checkoutBtn">
+            <i class="fas fa-lock me-2"></i>Proceed to Checkout
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Location Details Modal -->
+  <div class="modal fade" id="locationModal" tabindex="-1" aria-labelledby="locationModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header bg-danger text-white">
+          <h5 class="modal-title" id="locationModalLabel">Store Details</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h4 id="modalStoreName" class="mb-3"></h4>
+          <div class="store-details">
+            <p><i class="fas fa-map-marker-alt text-danger me-2"></i><strong>Address:</strong> <span
+                id="modalStoreAddress"></span></p>
+            <p><i class="fas fa-clock text-danger me-2"></i><strong>Hours:</strong> <span id="modalStoreHours"></span>
+            </p>
+            <p><i class="fas fa-phone text-danger me-2"></i><strong>Phone:</strong> <span id="modalStorePhone"></span>
+            </p>
+          </div>
+          <div class="mt-4">
+            <h6><i class="fas fa-info-circle text-danger me-2"></i>Store Features:</h6>
+            <ul>
+              <li>Wide selection of greeting cards</li>
+              <li>Custom card printing available</li>
+              <li>Gift wrapping services</li>
+              <li>Knowledgeable staff</li>
+              <li>Parking available</li>
+              <li>Wheelchair accessible</li>
+            </ul>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-danger" onclick="getDirections()">
+            <i class="fas fa-directions me-2"></i>Get Directions
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Form Submit Success Modal -->
+  <div class="modal fade" id="submitModal" tabindex="-1" aria-labelledby="submitModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header bg-success text-white">
+          <h5 class="modal-title" id="submitModalLabel"><i class="fas fa-check-circle me-2"></i>Message Sent
+            Successfully!</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+          <div class="mb-4">
+            <i class="fas fa-envelope-open-text fa-4x text-success mb-3"></i>
+            <h4>Thank You!</h4>
+            <p class="text-muted">Your message has been sent successfully. We'll get back to you within 24 hours.</p>
+          </div>
+          <div class="alert alert-info">
+            <i class="fas fa-info-circle me-2"></i>
+            <small>You'll receive a confirmation email shortly. Check your spam folder if you don't see it.</small>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success w-100" data-bs-dismiss="modal">
+            <i class="fas fa-home me-2"></i>Return to Home
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script scr="images/https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script scr="images/https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script>
-    $(function () {
-      $('a[href*="#"]').smoothScroll({
-        speed: 800,
-        offset: -50 // adjust if you have fixed header
+    // Cart data
+    let cart = [];
+    let currentCard = null;
+
+    // Navbar scroll effect
+    $(window).scroll(function () {
+      if ($(window).scrollTop() > 50) {
+        $('.navbar').addClass('scrolled');
+      } else {
+        $('.navbar').removeClass('scrolled');
+      }
+    });
+
+    // Smooth scrolling for anchor links
+    function scrollToSection(sectionId) {
+      $('html, body').animate({
+        scrollTop: $('#' + sectionId).offset().top - 70
+      }, 800);
+    }
+
+    // Card Detail Modal Event Listeners
+    $(document).on('click', '.view-details-btn', function () {
+      const button = $(this);
+      currentCard = {
+        title: button.data('title'),
+        price: button.data('price'),
+        brand: button.data('brand'),
+        image: button.data('image'),
+        description: button.data('description'),
+        quantity: 1
+      };
+
+      $('#modalCardTitle').text(currentCard.title);
+      $('#modalCardPrice').text('$' + currentCard.price);
+      $('#modalCardBrand').text(currentCard.brand);
+      $('#modalCardImage').attr('src', currentCard.image);
+      $('#modalCardDescription').text(currentCard.description);
+      $('#quantity').val(1);
+
+      $('#cardDetailModal').modal('show');
+    });
+
+    // Location Modal Event Listeners
+    $(document).on('click', '.store-details-btn', function () {
+      const button = $(this);
+      $('#modalStoreName').text(button.data('store'));
+      $('#modalStoreAddress').text(button.data('address'));
+      $('#modalStoreHours').text(button.data('hours'));
+      $('#modalStorePhone').text(button.data('phone'));
+      $('#locationModal').modal('show');
+    });
+
+    // Quantity changer
+    function changeQuantity(change) {
+      let quantityInput = document.getElementById('quantity');
+      let newQuantity = parseInt(quantityInput.value) + change;
+      if (newQuantity >= 1 && newQuantity <= 10) {
+        quantityInput.value = newQuantity;
+        if (currentCard) currentCard.quantity = newQuantity;
+      }
+    }
+
+    // Add to cart
+    function addToCart() {
+      if (!currentCard) return;
+
+      // Check if item already in cart
+      const existingItem = cart.find(item => item.title === currentCard.title);
+      if (existingItem) {
+        existingItem.quantity += currentCard.quantity;
+      } else {
+        cart.push({
+          title: currentCard.title,
+          price: currentCard.price,
+          brand: currentCard.brand,
+          image: currentCard.image,
+          quantity: currentCard.quantity
+        });
+      }
+
+      updateCart();
+      $('#cardDetailModal').modal('hide');
+      showNotification('Item added to cart!', 'success');
+    }
+
+    // Update cart display
+    function updateCart() {
+      const cartItems = $('#cartItems');
+      const cartSummary = $('#cartSummary');
+      const cartCount = $('.cart-count');
+      const checkoutBtn = $('#checkoutBtn');
+
+      if (cart.length === 0) {
+        cartItems.html(`
+          <div class="text-center py-5">
+            <i class="fas fa-shopping-cart fa-3x text-muted mb-3"></i>
+            <p class="text-muted">Your cart is empty</p>
+            <button class="btn btn-outline-danger" data-bs-dismiss="modal">Continue Shopping</button>
+          </div>
+        `);
+        cartSummary.hide();
+        checkoutBtn.prop('disabled', true);
+        cartCount.text('0');
+        return;
+      }
+
+      let cartHTML = '';
+      let totalItems = 0;
+      let subtotal = 0;
+
+      cart.forEach((item, index) => {
+        totalItems += item.quantity;
+        const itemTotal = item.price * item.quantity;
+        subtotal += itemTotal;
+
+        cartHTML += `
+          <div class="cart-item border-bottom py-3">
+            <div class="row align-items-center">
+              <div class="col-3 col-md-2">
+                <img scr="images/${item.image}" class="img-fluid rounded" alt="${item.title}" style="width: 70px; height: 70px; object-fit: cover;">
+              </div>
+              <div class="col-5 col-md-6">
+                <h6 class="mb-1">${item.title}</h6>
+                <p class="text-muted small mb-0">${item.brand}</p>
+                <p class="mb-0 text-danger">$${item.price} each</p>
+              </div>
+              <div class="col-2 col-md-2">
+                <div class="input-group input-group-sm">
+                  <button class="btn btn-outline-danger btn-sm" type="button" onclick="updateCartQuantity(${index}, -1)">-</button>
+                  <input type="number" class="form-control text-center" value="${item.quantity}" min="1" max="10" readonly>
+                  <button class="btn btn-outline-danger btn-sm" type="button" onclick="updateCartQuantity(${index}, 1)">+</button>
+                </div>
+              </div>
+              <div class="col-2 col-md-2 text-end">
+                <h6 class="mb-0">$${itemTotal.toFixed(2)}</h6>
+                <button class="btn btn-link text-danger p-0" onclick="removeFromCart(${index})">
+                  <i class="fas fa-trash"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        `;
+      });
+
+      cartItems.html(cartHTML);
+
+      // Update cart summary
+      const shipping = subtotal > 50 ? 0 : 5;
+      const tax = subtotal * 0.1; // 10% tax
+      const total = subtotal + shipping + tax;
+
+      $('#cartSubtotal').text('$' + subtotal.toFixed(2));
+      $('#cartShipping').text(shipping === 0 ? 'FREE' : '$' + shipping.toFixed(2));
+      $('#cartTax').text('$' + tax.toFixed(2));
+      $('#cartTotal').text('$' + total.toFixed(2));
+
+      cartSummary.show();
+      cartCount.text(totalItems);
+      checkoutBtn.prop('disabled', false);
+    }
+
+    // Update cart item quantity
+    function updateCartQuantity(index, change) {
+      const newQuantity = cart[index].quantity + change;
+      if (newQuantity >= 1 && newQuantity <= 10) {
+        cart[index].quantity = newQuantity;
+        updateCart();
+      }
+    }
+
+    // Remove item from cart
+    function removeFromCart(index) {
+      cart.splice(index, 1);
+      updateCart();
+      showNotification('Item removed from cart', 'warning');
+    }
+
+    // Buy now function
+    function buyNow() {
+      if (!currentCard) return;
+
+      // Add to cart and checkout
+      cart = [{
+        title: currentCard.title,
+        price: currentCard.price,
+        brand: currentCard.brand,
+        image: currentCard.image,
+        quantity: currentCard.quantity
+      }];
+
+      updateCart();
+      $('#cardDetailModal').modal('hide');
+      $('#cartModal').modal('show');
+    }
+
+    // Checkout function
+    function checkout() {
+      showNotification('Proceeding to checkout...', 'info');
+      // In a real app, this would redirect to checkout page
+      setTimeout(() => {
+        $('#cartModal').modal('hide');
+        showNotification('Checkout successful! Order confirmation sent to email.', 'success');
+        cart = [];
+        updateCart();
+      }, 2000);
+    }
+
+    // Get directions function
+    function getDirections() {
+      const address = $('#modalStoreAddress').text();
+      showNotification('Opening Google Maps directions to: ' + address, 'info');
+      // In a real app, this would open Google Maps
+      $('#locationModal').modal('hide');
+    }
+
+    // Show notification
+    function showNotification(message, type) {
+      const notification = document.createElement('div');
+      notification.className = `alert alert-${type} alert-dismissible fade show position-fixed`;
+      notification.style.cssText = `
+        top: 80px;
+        right: 20px;
+        z-index: 9999;
+        min-width: 300px;
+        max-width: 90%;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      `;
+      notification.innerHTML = `
+        <i class="fas fa-${type === 'success' ? 'check-circle' : 'info-circle'} me-2"></i>
+        ${message}
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+      `;
+
+      document.body.appendChild(notification);
+
+      setTimeout(() => {
+        notification.remove();
+      }, 3000);
+    }
+
+    // Form submission
+    $('#submitFormBtn').click(function () {
+      const name = $('#name').val();
+      const email = $('#email').val();
+      const message = $('#subject').val();
+
+      if (!name || !email || !message) {
+        showNotification('Please fill in all required fields', 'warning');
+        return;
+      }
+
+      // Simulate form submission
+      showNotification('Sending your message...', 'info');
+
+      setTimeout(() => {
+        $('#contactForm')[0].reset();
+        $('#submitModal').modal('show');
+      }, 1000);
+    });
+
+    // Initialize cart and event listeners
+    $(document).ready(function () {
+      updateCart();
+
+      // Add animation to cards on scroll
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -100px 0px'
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('fade-in-up');
+          }
+        });
+      }, observerOptions);
+
+      document.querySelectorAll('.card').forEach(card => {
+        observer.observe(card);
+      });
+
+      // Hero button click event
+      $('.b1').click(function () {
+        scrollToSection('Hallmark');
+      });
+
+      // Make navbar dropdown links work
+      $('.dropdown-item').click(function (e) {
+        const href = $(this).attr('href');
+        if (href && href.startsWith('#')) {
+          e.preventDefault();
+          scrollToSection(href.substring(1));
+
+          // Close dropdown on mobile
+          if ($(window).width() < 992) {
+            $('.navbar-collapse').collapse('hide');
+          }
+        }
       });
     });
   </script>
